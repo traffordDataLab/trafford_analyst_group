@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+header, section, footer, aside, nav, main, article, figure
+{
+  display: block;   /* non-HTML5 browser compatibility */
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
