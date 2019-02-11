@@ -1,0 +1,31 @@
+animal,speed_kph,category
+Cheetah,120,land
+Domestic cat,48,land
+Elephant,40,land
+Giraffe,52,land
+Horse,88,land
+Ostrich,70,land
+Pig,17.7,land
+Polar Bear,30,land
+Rabbit,48,land
+Squirrel,20,land
+California Condor,90,air
+Eider Duck,113,air
+Frigatebird,153,air
+Gannet,100,air
+Mallard,105,air
+Pigeon,59,air
+Red-breasted Merganser,129,air
+Red-tailed Hawk,195,air
+Spur-winged Goose,142,air
+White-throated Needletail,170,air
+American Eel,3.9,water
+Barracuda,44,water
+Blue Whale,50,water
+Bluefin Tuna,70,water
+Bottlenose Dolphin,35,water
+California Sea Lion,21.6,water
+Chinstrap Penguin,32.3,water
+Common Octopus,40,water
+Flying Fish,56.5,water
+Great White Shark,40,water
