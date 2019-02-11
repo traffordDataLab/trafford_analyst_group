@@ -1,0 +1,21 @@
+Linking CSV data to Excel.
+
+This process assumes that the data is already stored in a CSV file.
+
+1. Open Excel in order to create the spreadsheet that will work with the CSV data.
+
+2. Select the "Data" tab and choose "Get External Data" -> "From Text".
+
+3. You will be asked to select the CSV data file. You can choose a local/network file or enter a web address.
+
+4. The "Text Import Wizard" window appears. Ensure that the "Delimited" radio button is selected, then select "Next >".
+
+5. In Step 2 of 3, choose the "Comma" checkbox and de-select the others, e.g. "Tab", then select "Next >".
+
+6. Step 3 of 3 allows you to choose the formatting for the data, e.g. 1 decimal place for numbers, date formats etc. Make the required choices and then select "Finish".
+
+7. A new, smaller window titled "Import Data" appears asking where you would like to put the data you are importing. Before choosing, select the "Properties" button.
+
+8. Another window appears "External Data Range Properties". In the "Refresh control" section de-select "Prompt for file name on refresh" and select "Refresh data when opening the file". If you want the data to be refreshed periodically whilst the spreadsheet is open, (in the event that the data stored in the CSV changes), also select the "Refresh every" checkbox and choose a value for the number of minutes delay between refreshes. Finally select the "OK" button.
+
+9. In the "Import Data" window choose where you want to put the data, either in the existing worksheet or a new one, and then select the "OK" button.
