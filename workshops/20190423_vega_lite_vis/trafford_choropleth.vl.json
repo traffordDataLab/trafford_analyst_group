@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+  "description": "Basic choropleth (rate/ratio)",
+  "autosize": "fit",
+  "width": 600,
+  "height": 300,
+  "title": "Anti-social behaviour rate, 2017-10 to 2018-11",
+  "data": {
+    "url": "https://www.trafforddatalab.io/spatial_data/ward/2017/trafford_ward_super_generalised.geojson",
+    "format": {"property": "features"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.area_name",
+      "from": {
+        "data": {
+          "values": [
+            {"area_name": "Altrincham", "value": 16.2},
+            {"area_name": "Ashton upon Mersey", "value": 9.3},
+            {"area_name": "Bowdon", "value": 10.8},
+            {"area_name": "Broadheath", "value": 11.2},
+            {"area_name": "Brooklands", "value": 8.3},
+            {"area_name": "Bucklow-St Martins", "value": 25.4},
+            {"area_name": "Clifford", "value": 20.9},
+            {"area_name": "Davyhulme East", "value": 15.7},
+            {"area_name": "Davyhulme West", "value": 8.7},
+            {"area_name": "Flixton", "value": 7.3},
+            {"area_name": "Gorse Hill", "value": 26.7},
+            {"area_name": "Hale Barns", "value": 8.1},
+            {"area_name": "Hale Central", "value": 10.5},
+            {"area_name": "Longford", "value": 20.1},
+            {"area_name": "Priory", "value": 19.3},
+            {"area_name": "St Mary's", "value": 10.4},
+            {"area_name": "Sale Moor", "value": 8.9},
+            {"area_name": "Stretford", "value": 15},
+            {"area_name": "Timperley", "value": 5.3},
+            {"area_name": "Urmston", "value": 12.7},
+            {"area_name": "Village", "value": 13.7}
+          ]
+        },
+        "key": "area_name",
+        "fields": ["value"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1},
+  "projection": {"type": "mercator"},
+  "encoding": {
+    "color": {
+      "field": "value",
+      "scale": {"scheme": "viridis"},
+      "type": "quantitative",
+      "legend": {
+        "title": null,
+        "direction": "horizontal",
+        "orient": "bottom-left"
+      }
+    },
+        "tooltip": [
+          {"field": "properties.area_name", "type": "nominal", "title": "Ward"},
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Rate"
+          }
+        ]
+  },
+  "config": {"view": {"stroke": "transparent"}}
+}
