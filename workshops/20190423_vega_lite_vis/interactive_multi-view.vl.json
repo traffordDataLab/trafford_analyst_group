@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+  "description": "Scatterplot",
+  "title": {"text": "Relationship between animals mass and speed"},
+  "data": {
+    "url": "https://www.trafforddatalab.io/trafford_analyst_group/R/speed_of_animals.csv"
+  },
+  "vconcat": [
+    {
+      "mark": "circle",
+      "width": 600,
+      "encoding": {
+        "y": {
+          "field": "speed_kph",
+          "type": "quantitative",
+          "title": "Speed [kph]"
+        },
+        "x": {
+          "field": "mass_kg",
+          "type": "quantitative",
+          "scale": {"type": "log", "domain": [0.01, 1000000]},
+          "title": "Mass [kg]"
+        },
+        "color": {
+          "field": "habitat",
+          "type": "nominal",
+          "scale": {"scheme": "set2"},
+          "legend": {"title": "Habitat"}
+        },
+        "tooltip": [
+          {"field": "name", "type": "nominal", "title": "Animal"},
+          {"field": "habitat", "type": "nominal", "title": "Habitat"},
+          {"field": "speed_kph", "type": "nominal", "title": "Speed [kph]"},
+          {"field": "mass_kg", "type": "nominal", "title": "Mass [kg]"}
+        ]
+      },
+      "transform": [{"filter": {"selection": "click"}}]
+    },
+    {
+      "mark": "bar",
+      "width": 600,
+      "encoding": {
+        "x": {
+          "aggregate": "count",
+          "field": "habitat",
+          "type": "quantitative",
+          "title": "Count"
+        },
+        "y": {"field": "habitat", "type": "nominal", "title": "Habitat"},
+        "color": {
+          "condition": {
+            "field": "habitat",
+            "type": "nominal",
+            "scale": {"scheme": "set2"},
+            "selection": "click",
+            "title": "Habitat"
+          },
+          "value": "lightgray"
+        }
+      },
+      "selection": {"click": {"encodings": ["color"], "type": "multi"}}
+    }
+  ]
+}
