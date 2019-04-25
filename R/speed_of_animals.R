@@ -28,13 +28,13 @@ stats <- df %>%
   mutate(name = str_to_title(name),
          length_cm =
            case_when(
-             str_detect(length, "m") ~ parse_number(length)*100,
-             TRUE ~ parse_number(length)),
+             str_detect(length, "cm") ~ parse_number(length),
+             TRUE ~ parse_number(length)*100),
          mass_kg =
            case_when(
              str_detect(mass, "t") ~ parse_number(mass)*1000,
              str_detect(mass, "kg") ~ parse_number(mass),
-             str_detect(mass, "g") ~ parse_number(mass)/1000),
+             TRUE ~ parse_number(mass)/1000),
          mass_kg = as.numeric(sprintf("%0.2f", mass_kg)),
          speed_kph = parse_number(kph)) %>% 
   select(name, habitat, length_cm, mass_kg, speed_kph)
