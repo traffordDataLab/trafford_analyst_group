@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<animals>
+	<animal>
+		<name>Cheetah</name>
+		<speed>
+			<kph>120</kph>
+		</speed>
+		<category>land</category>
+	</animal>
+	<animal>
+		<name>Domestic cat</name>
+		<speed>
+			<kph>48</kph>
+		</speed>
+		<category>land</category>
+	</animal>
+	<animal>
+		<name>Elephant</name>
+		<speed>
+			<kph>40</kph>
+		</speed>
+		<category>land</category>
+	</animal>	
+</animals>

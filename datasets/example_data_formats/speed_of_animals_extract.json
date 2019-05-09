@@ -1,0 +1,17 @@
+﻿[
+	{
+		"name": "Cheetah",
+		"speed_kph": 120,
+		"category": "land"	
+	},
+	{
+		"name": "Domestic cat",
+		"speed_kph": 48,
+		"category": "land"	
+	},
+	{
+		"name": "Elephant",
+		"speed_kph": 40,
+		"category": "land"	
+	}
+]
