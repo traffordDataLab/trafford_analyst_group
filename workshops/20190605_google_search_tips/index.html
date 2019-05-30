@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style type="text/css">
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 20px;
+}
+
+.title
+{
+	color: #0099CC;
+	font-weight: bold;
+}
+
+.description
+{
+	color: #bdbdbd;
+	font-size: 0.8em;
+}
+
+.search input,
+.search button
+{
+	font-size: 1em;
+	padding: 4px;
+}
+
+button
+{
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+
+.fa_custom
+{
+	color: #0099CC
+}
+</style>
+
+</head>
+<body>
+<h2>Google search tips</h2>
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Search for an exact match</span><br />
+		<span class="description">Return pages that include a specific term or phrase</span><br />
+		<input class="search" type="text" name="q" size="35" value='"trafford council"' readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Search for X or Y</span><br />
+		<span class="description">Return pages that include one of the terms</span><br />
+		<input class="search" type="text" name="q" size="35" value='“homelessness” OR “rough sleeping”' readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Search for X and Y</span><br />
+		<span class="description">Return pages that include all terms</span><br />
+		<input class="search" type="text" name="q" size="35" value='trafford AND “affordable housing”' readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Group multiple search terms</span><br />
+		<span class="description">Nest terms to include synonyms</span><br />
+		<input class="search" type="text" name="q" size="35" value='trafford (deprivation OR inequality)'  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Exclude a search term</span><br />
+		<span class="description">Exclude pages that include a term or phrase</span><br />
+		<input class="search" type="text" name="q" size="35" value="trafford -old"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Wildcard</span><br />
+		<span class="description">Substitute a missing search term</span><br />
+		<input class="search" type="text" name="q" size="35" value="Bucklow * Martins"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Search by file type</span><br />
+		<span class="description">Return specific filetypes e.g. png, pdf, doc</span><br />
+		<input class="search" type="text" name="q" size="35" value="2017 population estimates local authority filetype:xls"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Search by term in URL</span><br />
+		<span class="description">Return pages with certain term in the URL</span><br />
+		<input class="search" type="text" name="q" size="35" value="inurl:trafford"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Search by terms in URL</span><br />
+		<span class="description">Return pages with all terms in the URL</span><br />
+		<input class="search" type="text" name="q" size="35" value="allinurl:trafford council"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Search pages of a website</span><br />
+		<span class="description">Return pages of a specific website that include terms</span><br />
+		<input class="search" type="text" name="q" size="35" value="site:traffordjsna.org.uk diabetes"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Proximity search</span><br />
+		<span class="description">Return pages containing terms within x words of each other</span><br />
+		<input class="search" type="text" name="q" size="35" value="Trafford AROUND(4) UA92"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Find sites that link to a site</span><br />
+		<span class="description">Return pages linking to a specific domain or URL</span><br />
+		<input class="search" type="text" name="q" size="35" value="link:traffordpartnership.org"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Define a word</span><br />
+		<span class="description">Return the definition of a term or phrase</span><br />
+		<input class="search" type="text" name="q" size="35" value="define: NEET"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Show location</span><br />
+				<span class="description">Return a map corresponding to a place name</span><br />
+		<input class="search" type="text" name="q" size="35" value="map: trafford"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Translate a word</span><br />
+		<span class="description">Return the translation of a term or phrase</span><br />
+		<input class="search" type="text" name="q" size="35" value="translate bread to danish"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Find your ip address</span><br />
+		<span class="description">Return your device's Internet Protocol address</span><br />
+		<input class="search" type="text" name="q" size="35" value="ip address"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Find insecure web pages</span><br />
+		<span class="description">Return site pages without HTTPS</span><br />
+		<input class="search" type="text" name="q" size="35" value="site:trafford.gov.uk -inurl:https"  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Find duplicate content</span><br />
+		<span class="description">Return pages from a website with the same content</span><br />
+		<input class="search" type="text" name="q" size="35" value='site:trafford.gov.uk “making Trafford a great place to live and work"'  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br />
+
+<div>
+	<form target="_blank" action="https://www.google.co.uk/search" method="get" class="search">
+		<span class="title">Combine searches</span><br />
+		<span class="description">Build up your search with multiple parameters</span><br />
+		<input class="search" type="text" name="q" size="35" value='site:trafford.gov.uk filetype:pdf ("climate change" OR "pollution" OR "air quality")'  readonly="readonly"/>
+		<button type="submit" class="fa fa-search fa_custom"></button>
+	</form>
+</div>
+<br /><br />
+
+</body>
+</html>
