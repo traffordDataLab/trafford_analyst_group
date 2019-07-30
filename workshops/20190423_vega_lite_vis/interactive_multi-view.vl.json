@@ -3,7 +3,7 @@
   "description": "Scatterplot",
   "title": {"text": "Relationship between animals mass and speed"},
   "data": {
-    "url": "https://www.trafforddatalab.io/trafford_analyst_group/R/speed_of_animals.csv"
+    "url": "https://www.trafforddatalab.io/trafford_analyst_group/datasets/speed_of_animals/speed_of_animals.csv"
   },
   "vconcat": [
     {
